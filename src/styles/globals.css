@@ -1,0 +1,152 @@
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: white;
+  background-color: #0c1b35; /* Color azul empresarial */
+  background-image: linear-gradient(
+    to bottom,
+    #0e2940,
+    /* Color inicial del degradado */ #0c1b35 /* Color final del degradado */
+  );
+  font-family: 'Roboto', sans-serif; /* Puedes usar una fuente adecuada */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #ffffff; /* Texto gris suave */
+  font-weight: 800;
+}
+.lead,
+.care-section {
+  color: #0c1b35;
+}
+/* Navbar */
+.navbar-nav .nav-link {
+  font-family: 'Merriweather', serif;
+  color: #0c1b35 !important;
+  font-size: 25px;
+  font-weight: 650;
+}
+
+/* HERO */
+.hero {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      /* Gradiente oscuro desde arriba */ rgba(0, 0, 0, 0.4)
+    ),
+    url('/hero-summit.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Hace que el texto sea visible */
+}
+
+.hero-txt {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.our-business img {
+  border-radius: 10px; /* Añade un toque estético */
+}
+
+.decorative-line {
+  width: 150px;
+  height: 3px;
+  background-color: #0d6efd; /* Color azul */
+  margin-bottom: 20px;
+}
+
+.font-weight-bold {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; /* Distancia desde el borde inferior */
+  right: 20px; /* Distancia desde el borde derecho */
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+  cursor: pointer;
+}
+
+.whatsapp-button img {
+  border-radius: 50%; /* Hace que el botón sea circular */
+  box-shadow: 0px 4px 10px rgba(255, 254, 254, 0.2); /* Añade sombra para hacerlo más visible */
+  transition: transform 0.3s; /* Animación al hacer hover */
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+.popup {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      /* Gradiente oscuro desde arriba */ rgba(0, 0, 0, 0.2)
+    ),
+    url('/popup.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  width: 1000px;
+  height: 500px;
+}
+
+.popup-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.close-btn {
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  position: fixed;
+  left: 50%;
+}
